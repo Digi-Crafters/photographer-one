@@ -1,0 +1,324 @@
+{
+  "portfolio": {
+    "featuredProjects": [
+      {
+        "id": "royal-jaipur-wedding",
+        "title": "Royal Jaipur Wedding",
+        "category": "Wedding",
+        "location": "Jaipur, Rajasthan",
+        "description": "A grand royal wedding celebration at the heritage palace, blending traditional Rajput customs with contemporary celebrations.",
+        "detailedDescription": "This magnificent wedding spanned three days across Jaipur's most iconic heritage properties. We captured every moment from the intimate Mehendi ceremony at a private haveli to the grand reception at a royal palace. The vibrant colors, intricate details, and emotional moments created a visual spectacle that honored both families' rich traditions.",
+        "images": [
+          "https://images.unsplash.com/photo-1583939003579-730e3918aaca?q=80&w=1470&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1606893995103-a431bce6c897?q=80&w=1484&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=1470&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1542037104857-ffbb0b9155fb?q=80&w=1470&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1583939003579-730e3918aaca?q=80&w=1470&auto=format&fit=crop"
+        ],
+        "highlights": [
+          "Heritage palace venue",
+          "Traditional Rajput ceremonies",
+          "Elephant procession",
+          "Fireworks display",
+          "Multi-generational family portraits"
+        ],
+        "stats": {
+          "imagesDelivered": 1200,
+          "coverageDays": 3,
+          "photographers": 4,
+          "clientRating": 5.0
+        },
+        "tags": ["Royal", "Heritage", "Traditional", "Grand Celebration", "Destination"],
+        "year": "2024",
+        "featured": true
+      },
+      {
+        "id": "goa-beach-pre-wedding",
+        "title": "Goa Beach Pre-Wedding",
+        "category": "Pre-Wedding",
+        "location": "North Goa, Goa",
+        "description": "Sun-kissed beach photoshoot capturing the couple's love against stunning Arabian Sea sunsets and Portuguese architecture.",
+        "detailedDescription": "This romantic pre-wedding session combined Goa's natural beauty with its colonial charm. We started with golden hour shots at Vagator Beach, moved to the iconic Chapora Fort for dramatic landscapes, and concluded with intimate moments in the Latin Quarters of Panaji. The couple's chemistry and the magical Goan light created unforgettable imagery.",
+        "images": [
+          "https://images.unsplash.com/photo-1519225421980-715cb0215aed?q=80&w=1470&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1539635278303-d4002c07eae3?q=80&w=1470&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1601564921698-01661994c8b3?q=80&w=1470&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1556082598-96a4de8b8882?q=80&w=1464&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?q=80&w=1469&auto=format&fit=crop"
+        ],
+        "highlights": [
+          "Golden hour photography",
+          "Beach and fort locations",
+          "Portuguese architecture backdrop",
+          "Candid couple moments",
+          "Sunset silhouettes"
+        ],
+        "stats": {
+          "imagesDelivered": 180,
+          "coverageDays": 1,
+          "photographers": 2,
+          "clientRating": 4.9
+        },
+        "tags": ["Beach", "Sunset", "Romantic", "Destination", "Candid"],
+        "year": "2024",
+        "featured": true
+      },
+      {
+        "id": "delhi-corporate-portraits",
+        "title": "Delhi Corporate Leadership Series",
+        "category": "Corporate",
+        "location": "New Delhi",
+        "description": "Executive portrait series for a leading Indian conglomerate, capturing leadership presence in contemporary office environments.",
+        "detailedDescription": "This corporate assignment involved creating professional portraits for the leadership team of a Fortune 500 company's India headquarters. We set up mobile studios across their corporate offices, capturing executives in both formal boardroom settings and casual collaborative spaces. The focus was on conveying authority, approachability, and the company's innovative culture.",
+        "images": [
+          "https://images.unsplash.com/photo-1551836026-d5c8c2c4228d?q=80&w=1470&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1556761175-b413da4baf72?q=80&w=1374&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1497366754035-f200968a6e72?q=80&w=1469&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1374&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?q=80&w=1470&auto=format&fit=crop"
+        ],
+        "highlights": [
+          "Executive headshots",
+          "Environmental portraits",
+          "Team group photos",
+          "Brand-aligned styling",
+          "Fast turnaround delivery"
+        ],
+        "stats": {
+          "imagesDelivered": 75,
+          "coverageDays": 2,
+          "photographers": 2,
+          "clientRating": 4.8
+        },
+        "tags": ["Corporate", "Executive", "Professional", "Branding", "Business"],
+        "year": "2024",
+        "featured": true
+      }
+    ],
+    "projectsByCategory": {
+      "wedding": [
+        {
+          "id": "traditional-bengali-wedding",
+          "title": "Traditional Bengali Wedding",
+          "location": "Kolkata, West Bengal",
+          "description": "Cultural immersion capturing the rich traditions of Bengali wedding rituals and celebrations.",
+          "images": [
+            "https://images.unsplash.com/photo-1606893995103-a431bce6c897?q=80&w=1484&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1542037104857-ffbb0b9155fb?q=80&w=1470&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1583939003579-730e3918aaca?q=80&w=1470&auto=format&fit=crop"
+          ],
+          "highlights": ["Saat Paak", "Gaye Holud", "Biye", "Bou Bhaat"],
+          "year": "2023"
+        },
+        {
+          "id": "south-indian-temple-wedding",
+          "title": "South Indian Temple Wedding",
+          "location": "Chennai, Tamil Nadu",
+          "description": "Sacred temple wedding following traditional Tamil Brahmin customs and rituals.",
+          "images": [
+            "https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=1470&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1606893995103-a431bce6c897?q=80&w=1484&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1542037104857-ffbb0b9155fb?q=80&w=1470&auto=format&fit=crop"
+          ],
+          "highlights": ["Kashi Yatra", "Mangalasutra", "Saptapadi", "Temple Ceremony"],
+          "year": "2023"
+        },
+        {
+          "id": "modern-urban-wedding",
+          "title": "Modern Urban Wedding",
+          "location": "Mumbai, Maharashtra",
+          "description": "Contemporary wedding celebration in luxury hotel with fusion traditions.",
+          "images": [
+            "https://images.unsplash.com/photo-1583939003579-730e3918aaca?q=80&w=1470&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=1470&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1606893995103-a431bce6c897?q=80&w=1484&auto=format&fit=crop"
+          ],
+          "highlights": ["Rooftop Ceremony", "Fusion Decor", "Cocktail Reception", "After Party"],
+          "year": "2024"
+        }
+      ],
+      "preWedding": [
+        {
+          "id": "udaipur-palace-shoot",
+          "title": "Udaipur Palace Pre-Wedding",
+          "location": "Udaipur, Rajasthan",
+          "description": "Regal photoshoot at the City of Lakes featuring palace backdrops and traditional attire.",
+          "images": [
+            "https://images.unsplash.com/photo-1519225421980-715cb0215aed?q=80&w=1470&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1539635278303-d4002c07eae3?q=80&w=1470&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1601564921698-01661994c8b3?q=80&w=1470&auto=format&fit=crop"
+          ],
+          "highlights": ["Lake Pichola", "City Palace", "Traditional Rajputi Poshak", "Boat Shoot"],
+          "year": "2024"
+        },
+        {
+          "id": "munnar-tea-gardens",
+          "title": "Munnar Tea Gardens Pre-Wedding",
+          "location": "Munnar, Kerala",
+          "description": "Romantic shoot amidst lush tea plantations and misty mountains of Kerala.",
+          "images": [
+            "https://images.unsplash.com/photo-1556082598-96a4de8b8882?q=80&w=1464&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?q=80&w=1469&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1519225421980-715cb0215aed?q=80&w=1470&auto=format&fit=crop"
+          ],
+          "highlights": ["Tea Plantations", "Misty Mountains", "Traditional Kerala Attire", "Natural Light"],
+          "year": "2023"
+        }
+      ],
+      "portrait": [
+        {
+          "id": "classical-indian-portraits",
+          "title": "Classical Indian Portraits",
+          "location": "Studio - Delhi",
+          "description": "Traditional Indian portrait series featuring classical attire and artistic lighting.",
+          "images": [
+            "https://images.unsplash.com/photo-1554151228-14d9def656e4?q=80&w=1470&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1374&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1494790108755-2616b612b786?q=80&w=1374&auto=format&fit=crop"
+          ],
+          "highlights": ["Studio Lighting", "Traditional Attire", "Classical Poses", "Fine Art Approach"],
+          "year": "2024"
+        },
+        {
+          "id": "urban-lifestyle-portraits",
+          "title": "Urban Lifestyle Portraits",
+          "location": "Delhi Streets",
+          "description": "Contemporary lifestyle portraits in urban environments capturing modern Indian identity.",
+          "images": [
+            "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1374&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1494790108755-2616b612b786?q=80&w=1374&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1554151228-14d9def656e4?q=80&w=1470&auto=format&fit=crop"
+          ],
+          "highlights": ["Street Photography", "Urban Backgrounds", "Casual Styling", "Natural Expressions"],
+          "year": "2023"
+        }
+      ],
+      "family": [
+        {
+          "id": "joint-family-portrait",
+          "title": "Multi-Generational Family Portrait",
+          "location": "Family Home - Delhi",
+          "description": "Three-generation family portrait capturing bonds and relationships in home setting.",
+          "images": [
+            "https://images.unsplash.com/photo-1511988617509-a57c8a288659?q=80&w=1471&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=1476&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1511895426328-dc8714191300?q=80&w=1470&auto=format&fit=crop"
+          ],
+          "highlights": ["Three Generations", "Home Environment", "Candid Moments", "Traditional Attire"],
+          "year": "2024"
+        },
+        {
+          "id": "diwali-family-celebration",
+          "title": "Diwali Family Celebration",
+          "location": "Gurgaon, Haryana",
+          "description": "Festive family session during Diwali celebrations with traditional rituals and decorations.",
+          "images": [
+            "https://images.unsplash.com/photo-1570211776045-af3a510c6a52?q=80&w=1470&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1604594849809-dfedbc827105?q=80&w=1470&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1548365328-8c6db3220e4c?q=80&w=1470&auto=format&fit=crop"
+          ],
+          "highlights": ["Festive Decor", "Traditional Rituals", "Candle Light", "Family Bonding"],
+          "year": "2023"
+        }
+      ],
+      "maternity": [
+        {
+          "id": "traditional-maternity-shoot",
+          "title": "Traditional Indian Maternity Session",
+          "location": "Studio - Mumbai",
+          "description": "Elegant maternity portraits celebrating pregnancy with traditional Indian elements.",
+          "images": [
+            "https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=1364&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1511988617509-a57c8a288659?q=80&w=1471&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1549421260-ef6b48b1d15d?q=80&w=1470&auto=format&fit=crop"
+          ],
+          "highlights": ["Traditional Saree", "Floral Elements", "Soft Lighting", "Intimate Moments"],
+          "year": "2024"
+        }
+      ],
+      "corporate": [
+        {
+          "id": "startup-team-photos",
+          "title": "Tech Startup Team Photography",
+          "location": "Office - Bangalore",
+          "description": "Dynamic team photos for a growing tech startup showcasing their vibrant office culture.",
+          "images": [
+            "https://images.unsplash.com/photo-1551836026-d5c8c2c4228d?q=80&w=1470&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1556761175-b413da4baf72?q=80&w=1374&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1497366754035-f200968a6e72?q=80&w=1469&auto=format&fit=crop"
+          ],
+          "highlights": ["Office Environment", "Team Dynamics", "Casual Professional", "Brand Colors"],
+          "year": "2024"
+        }
+      ],
+      "festival": [
+        {
+          "id": "holi-festival-photography",
+          "title": "Holi Festival Celebration",
+          "location": "Delhi",
+          "description": "Vibrant Holi festival photography capturing the colors and joy of the celebration.",
+          "images": [
+            "https://images.unsplash.com/photo-1548365328-8c6db3220e4c?q=80&w=1470&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1604594849809-dfedbc827105?q=80&w=1470&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1570554520913-5c4c45d69e13?q=80&w=1470&auto=format&fit=crop"
+          ],
+          "highlights": ["Color Play", "Cultural Celebration", "Candid Joy", "Traditional Music"],
+          "year": "2024"
+        }
+      ]
+    },
+    "portfolioStats": {
+      "totalProjects": 156,
+      "weddingsCaptured": 89,
+      "preWeddingSessions": 45,
+      "corporateProjects": 22,
+      "yearsExperience": 8,
+      "clientSatisfaction": "98%",
+      "countriesCovered": 6,
+      "citiesPhotographed": 28
+    },
+    "testimonials": [
+      {
+        "id": 1,
+        "clientName": "Priya & Rajesh",
+        "project": "Royal Jaipur Wedding",
+        "text": "The team captured every emotion and detail of our wedding perfectly. They understood our family traditions and created memories we'll cherish forever.",
+        "rating": 5,
+        "location": "Jaipur"
+      },
+      {
+        "id": 2,
+        "clientName": "Ananya Sharma",
+        "project": "Goa Pre-Wedding Shoot",
+        "text": "Our pre-wedding photos look like they're from a magazine! The photographers made us feel so comfortable and the locations were magical.",
+        "rating": 5,
+        "location": "Mumbai"
+      },
+      {
+        "id": 3,
+        "clientName": "TechCorp India",
+        "project": "Corporate Leadership Series",
+        "text": "Professional, efficient, and delivered exceptional results. Our leadership team portraits perfectly represent our company culture.",
+        "rating": 5,
+        "location": "Delhi"
+      }
+    ],
+    "awards": [
+      {
+        "year": "2024",
+        "award": "Best Wedding Photography - Indian Photography Awards",
+        "project": "Royal Jaipur Wedding"
+      },
+      {
+        "year": "2023",
+        "award": "Excellence in Portrait Photography - National Geographic India",
+        "project": "Classical Indian Portraits"
+      },
+      {
+        "year": "2022",
+        "award": "Best Destination Wedding Coverage - Wedding Sutra Awards",
+        "project": "Goa Beach Pre-Wedding"
+      }
+    ]
+  }
+}

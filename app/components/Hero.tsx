@@ -218,25 +218,6 @@ const Hero: React.FC = () => {
             </div>
           </div>
         </motion.div>
-
-        {/* Scroll Indicator */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 1, delay: 1.8 }}
-          className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
-        >
-          <motion.div
-            animate={{ y: [0, 8, 0] }}
-            transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
-            className="flex flex-col items-center gap-3"
-          >
-            <div className="text-[0.65rem] tracking-[0.4em] text-[#9C8B7A] uppercase">
-              Scroll
-            </div>
-            <div className="w-px h-16 bg-gradient-to-b from-[#D4C4B0] to-transparent" />
-          </motion.div>
-        </motion.div>
       </motion.div>
     </div>
   );

@@ -1,0 +1,380 @@
+{
+  "services": [
+    {
+      "id": "wedding",
+      "title": "Wedding Photography",
+      "category": "Traditional & Contemporary",
+      "description": "Comprehensive wedding documentation blending traditional ceremonies with contemporary storytelling. We capture every sacred moment from pheras to candid celebrations.",
+      "detailedDescription": "Our wedding photography service is a perfect blend of traditional Indian wedding rituals and modern storytelling techniques. We understand the significance of every ceremony - from the vibrant Mehendi and energetic Sangeet to the sacred Pheras and emotional Vidaai. Our team specializes in capturing both the grandeur of Indian weddings and the intimate, emotional moments that make your day unique.",
+      "images": [
+        "https://images.unsplash.com/photo-1583939003579-730e3918aaca?q=80&w=1470&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=1470&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1606893995103-a431bce6c897?q=80&w=1484&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1583939003579-730e3918aaca?q=80&w=1470&auto=format&fit=crop"
+      ],
+      "packages": [
+        {
+          "name": "Essential",
+          "price": "₹75,000",
+          "features": ["Pre-wedding shoot", "Full day coverage", "2 photographers", "500+ edited photos", "Online gallery"]
+        },
+        {
+          "name": "Premium",
+          "price": "₹1,25,000",
+          "features": ["Pre-wedding shoot", "2-day coverage", "3 photographers", "800+ edited photos", "Premium album", "Cinematic video highlights"]
+        },
+        {
+          "name": "Luxury",
+          "price": "₹2,00,000",
+          "features": ["Multiple pre-wedding shoots", "Complete wedding coverage", "4 photographers + videographers", "1200+ edited photos", "Luxury wedding album", "Feature-style wedding film"]
+        }
+      ],
+      "features": [
+        "Traditional ceremony coverage",
+        "Candid moments",
+        "Family portraits",
+        "Detail shots (jewelry, decorations)",
+        "Multiple photographers",
+        "Same-day preview"
+      ],
+      "duration": "Full day or multi-day",
+      "deliveryTime": "4-6 weeks",
+      "popularFor": ["Big Fat Indian Weddings", "Destination Weddings", "Traditional Ceremonies"],
+      "stats": {
+        "eventsCaptured": "450+",
+        "experience": "8 Years",
+        "clientSatisfaction": "100%"
+      }
+    },
+    {
+      "id": "prewedding",
+      "title": "Pre-Wedding Shoot",
+      "category": "Romantic & Creative",
+      "description": "Creative pre-wedding sessions at exotic locations. From palace backdrops to beach sunsets, we create magical memories before the big day.",
+      "detailedDescription": "Pre-wedding shoots have become an essential part of Indian wedding celebrations. We offer themed photoshoots at locations of your choice - be it historical monuments, serene beaches, lush gardens, or urban landscapes. Our team helps you with outfit coordination, posing guidance, and creating a comfortable atmosphere to capture your natural chemistry and love story.",
+      "images": [
+        "https://images.unsplash.com/photo-1519225421980-715cb0215aed?q=80&w=1470&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1539635278303-d4002c07eae3?q=80&w=1470&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1601564921698-01661994c8b3?q=80&w=1470&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1556082598-96a4de8b8882?q=80&w=1464&auto=format&fit=crop"
+      ],
+      "packages": [
+        {
+          "name": "Basic",
+          "price": "₹25,000",
+          "features": ["2-hour shoot", "1 location", "1 photographer", "50 edited photos", "Online gallery"]
+        },
+        {
+          "name": "Standard",
+          "price": "₹40,000",
+          "features": ["4-hour shoot", "2 locations", "2 photographers", "100 edited photos", "Outfit change support"]
+        },
+        {
+          "name": "Premium",
+          "price": "₹65,000",
+          "features": ["Full day shoot", "Multiple locations", "Themed concepts", "150+ edited photos", "Makeup artist coordination"]
+        }
+      ],
+      "features": [
+        "Location scouting",
+        "Themed concepts",
+        "Multiple outfit changes",
+        "Posing guidance",
+        "Golden hour shots",
+        "Digital & print options"
+      ],
+      "duration": "2-8 hours",
+      "deliveryTime": "2-3 weeks",
+      "popularFor": ["Save the Date cards", "Wedding websites", "Reception displays"],
+      "stats": {
+        "sessionsCompleted": "280+",
+        "experience": "6 Years",
+        "clientSatisfaction": "98%"
+      }
+    },
+    {
+      "id": "engagement",
+      "title": "Engagement Ceremony",
+      "category": "Traditional & Modern",
+      "description": "Capture the joy of ring ceremony and sagai with traditional rituals and modern photography styles.",
+      "detailedDescription": "Indian engagement ceremonies are filled with emotions, traditional rituals, and family bonding. We specialize in capturing the essence of these intimate gatherings - from the exchange of rings to the blessings of elders. Our approach combines traditional posed photographs with candid moments that reflect the true emotions of the day.",
+      "images": [
+        "https://images.unsplash.com/photo-1583939003579-730e3918aaca?q=80&w=1470&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?q=80&w=1469&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1601564921698-01661994c8b3?q=80&w=1470&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1556082598-96a4de8b8882?q=80&w=1464&auto=format&fit=crop"
+      ],
+      "packages": [
+        {
+          "name": "Basic Coverage",
+          "price": "₹20,000",
+          "features": ["3-hour coverage", "1 photographer", "100+ edited photos", "Traditional & candid shots"]
+        },
+        {
+          "name": "Complete",
+          "price": "₹35,000",
+          "features": ["4-hour coverage", "2 photographers", "200+ edited photos", "Family portraits", "Same-day preview"]
+        }
+      ],
+      "features": [
+        "Traditional ritual coverage",
+        "Family group photos",
+        "Detail shots (ring, decorations)",
+        "Candid moments",
+        "Quick turnaround"
+      ],
+      "duration": "3-4 hours",
+      "deliveryTime": "1-2 weeks",
+      "popularFor": ["Ring Ceremonies", "Sagai", "Roka Ceremonies"],
+      "stats": {
+        "ceremoniesCaptured": "180+",
+        "experience": "5 Years",
+        "clientSatisfaction": "99%"
+      }
+    },
+    {
+      "id": "maternity",
+      "title": "Maternity Photography",
+      "category": "Ethereal & Emotional",
+      "description": "Celebrate the beautiful journey of motherhood with artistic maternity sessions that capture the glow and anticipation.",
+      "detailedDescription": "Maternity photography in Indian culture celebrates the divine journey of motherhood. We create serene, elegant photoshoots that honor this special time. From traditional Indian outfits to contemporary gowns, we help you create timeless memories that you'll cherish forever. Our studios are equipped with comfortable settings and we work at your pace to ensure a relaxing experience.",
+      "images": [
+        "https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=1364&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1511988617509-a57c8a288659?q=80&w=1471&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1549421260-ef6b48b1d15d?q=80&w=1470&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1531749668029-2db88e4276c7?q=80&w=1374&auto=format&fit=crop"
+      ],
+      "packages": [
+        {
+          "name": "Studio Session",
+          "price": "₹18,000",
+          "features": ["2-hour studio shoot", "1 photographer", "30 edited photos", "2 outfit changes", "Professional lighting"]
+        },
+        {
+          "name": "Outdoor Session",
+          "price": "₹25,000",
+          "features": ["3-hour outdoor shoot", "Golden hour timing", "40 edited photos", "Multiple locations", "Natural lighting"]
+        },
+        {
+          "name": "Couple Session",
+          "price": "₹35,000",
+          "features": ["4-hour shoot", "Studio + outdoor", "60 edited photos", "Partner included", "Makeup artist included"]
+        }
+      ],
+      "features": [
+        "Studio or outdoor options",
+        "Outfit guidance",
+        "Posing assistance",
+        "Family inclusion",
+        "Quick delivery",
+        "Print options"
+      ],
+      "duration": "2-4 hours",
+      "deliveryTime": "10-15 days",
+      "popularFor": ["Baby Shower announcements", "Nursery decorations", "Family albums"],
+      "stats": {
+        "sessionsCompleted": "120+",
+        "experience": "4 Years",
+        "clientSatisfaction": "100%"
+      }
+    },
+    {
+      "id": "newborn",
+      "title": "Newborn & Baby Photography",
+      "category": "Tender & Pure",
+      "description": "Capture the innocence and purity of your newborn with safe, professional baby photography sessions.",
+      "detailedDescription": "Newborn photography requires special care, patience, and expertise. Our photographers are trained in handling newborns safely and creating comfortable environments for both baby and parents. We offer themed setups, traditional Indian concepts, and natural lifestyle sessions that capture those fleeting early days of your child's life.",
+      "images": [
+        "https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=1364&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1503518458120-890c8bcd8be8?q=80&w=1470&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1531749668029-2db88e4276c7?q=80&w=1374&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1549421260-ef6b48b1d15d?q=80&w=1470&auto=format&fit=crop"
+      ],
+      "packages": [
+        {
+          "name": "Newborn Session",
+          "price": "₹15,000",
+          "features": ["3-hour session", "Studio setup", "20 edited photos", "Props & outfits", "Parent shots included"]
+        },
+        {
+          "name": "Milestone Package",
+          "price": "₹40,000",
+          "features": ["4 sessions (3,6,9,12 months)", "Studio & outdoor", "100+ edited photos", "Growth collage", "Digital album"]
+        }
+      ],
+      "features": [
+        "Safe posing techniques",
+        "Studio props provided",
+        "Temperature controlled environment",
+        "Parent involvement",
+        "Sibling shots",
+        "Quick sessions"
+      ],
+      "duration": "2-4 hours",
+      "deliveryTime": "2 weeks",
+      "popularFor": ["Birth announcements", "First year milestones", "Family albums"],
+      "stats": {
+        "babiesPhotographed": "200+",
+        "experience": "5 Years",
+        "clientSatisfaction": "100%"
+      }
+    },
+    {
+      "id": "family",
+      "title": "Family Portraits",
+      "category": "Generational & Traditional",
+      "description": "Beautiful family portraits that capture generations together, preserving your family legacy.",
+      "detailedDescription": "Family photography in Indian culture often involves multiple generations coming together. We specialize in organizing and capturing large family groups while maintaining individual connections. From traditional joint family portraits to contemporary lifestyle sessions, we create images that become family heirlooms for generations to come.",
+      "images": [
+        "https://images.unsplash.com/photo-1511988617509-a57c8a288659?q=80&w=1471&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=1476&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1511895426328-dc8714191300?q=80&w=1470&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1570211776045-af3a510c6a52?q=80&w=1470&auto=format&fit=crop"
+      ],
+      "packages": [
+        {
+          "name": "Mini Session",
+          "price": "₹12,000",
+          "features": ["1-hour session", "1 location", "15 edited photos", "Immediate family only"]
+        },
+        {
+          "name": "Extended Family",
+          "price": "₹25,000",
+          "features": ["2-hour session", "Multiple setups", "30 edited photos", "Up to 20 people"]
+        },
+        {
+          "name": "Generational",
+          "price": "₹45,000",
+          "features": ["3-hour session", "Studio & outdoor", "50+ edited photos", "Unlimited people", "Traditional outfits"]
+        }
+      ],
+      "features": [
+        "Large group organization",
+        "Traditional attire guidance",
+        "Multiple generation shots",
+        "Candid family moments",
+        "Studio or location options"
+      ],
+      "duration": "1-3 hours",
+      "deliveryTime": "2 weeks",
+      "popularFor": ["Family reunions", "Anniversary celebrations", "Festival photos"],
+      "stats": {
+        "familiesPhotographed": "380+",
+        "experience": "7 Years",
+        "clientSatisfaction": "100%"
+      }
+    },
+    {
+      "id": "corporate",
+      "title": "Corporate & Commercial",
+      "category": "Professional & Branding",
+      "description": "Professional corporate photography for businesses, branding, and commercial projects.",
+      "detailedDescription": "Corporate photography services tailored for Indian businesses and international brands operating in India. We understand the need for culturally appropriate imagery that also maintains global professional standards. From executive headshots to large corporate events, product photography to office culture shots, we deliver images that enhance your brand identity.",
+      "images": [
+        "https://images.unsplash.com/photo-1551836026-d5c8c2c4228d?q=80&w=1470&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1556761175-b413da4baf72?q=80&w=1374&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1497366754035-f200968a6e72?q=80&w=1469&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1374&auto=format&fit=crop"
+      ],
+      "packages": [
+        {
+          "name": "Executive Portraits",
+          "price": "₹10,000",
+          "features": ["1-hour session", "Studio setup", "5 edited headshots", "Professional retouching"]
+        },
+        {
+          "name": "Team Photography",
+          "price": "₹25,000",
+          "features": ["2-hour session", "Team & individual shots", "20 edited photos", "Office location"]
+        },
+        {
+          "name": "Corporate Event",
+          "price": "₹50,000",
+          "features": ["4-hour coverage", "2 photographers", "100+ edited photos", "Fast turnaround"]
+        }
+      ],
+      "features": [
+        "Professional lighting",
+        "Brand alignment",
+        "Fast delivery",
+        "Bulk editing",
+        "Digital archive",
+        "Commercial usage rights"
+      ],
+      "duration": "1-8 hours",
+      "deliveryTime": "3-5 days",
+      "popularFor": ["Company websites", "Marketing materials", "Executive profiles"],
+      "stats": {
+        "projectsCompleted": "190+",
+        "experience": "5 Years",
+        "clientSatisfaction": "97%"
+      }
+    },
+    {
+      "id": "festival",
+      "title": "Festival & Cultural",
+      "category": "Traditional & Vibrant",
+      "description": "Capture the colors and joy of Indian festivals and cultural celebrations.",
+      "detailedDescription": "India's rich cultural heritage comes alive during festivals. We specialize in capturing the vibrant colors, traditional attire, and joyful celebrations of festivals like Diwali, Holi, Navratri, and more. Our photographers are experienced in working in crowded, dynamic environments while capturing the essence of these cultural celebrations.",
+      "images": [
+        "https://images.unsplash.com/photo-1548365328-8c6db3220e4c?q=80&w=1470&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1604594849809-dfedbc827105?q=80&w=1470&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1570554520913-5c4c45d69e13?q=80&w=1470&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1548365328-8c6db3220e4c?q=80&w=1470&auto=format&fit=crop"
+      ],
+      "packages": [
+        {
+          "name": "Festival Coverage",
+          "price": "₹15,000",
+          "features": ["2-hour coverage", "1 photographer", "50 edited photos", "Candid moments"]
+        },
+        {
+          "name": "Family Festival",
+          "price": "₹30,000",
+          "features": ["4-hour coverage", "2 photographers", "100 edited photos", "Traditional rituals"]
+        }
+      ],
+      "features": [
+        "Fast-paced environment expertise",
+        "Colorful imagery",
+        "Traditional ritual coverage",
+        "Family moments",
+        "Quick delivery for social media"
+      ],
+      "duration": "2-4 hours",
+      "deliveryTime": "1 week",
+      "popularFor": ["Diwali celebrations", "Holi festivities", "Cultural events"],
+      "stats": {
+        "festivalsCovered": "90+",
+        "experience": "4 Years",
+        "clientSatisfaction": "98%"
+      }
+    }
+  ],
+  "additionalServices": [
+    {
+      "id": "album-design",
+      "title": "Premium Album Design",
+      "description": "Custom-designed wedding and portrait albums using high-quality materials and craftsmanship.",
+      "startingPrice": "₹15,000"
+    },
+    {
+      "id": "video-services",
+      "title": "Cinematography",
+      "description": "Professional video coverage for weddings and events with cinematic editing style.",
+      "startingPrice": "₹50,000"
+    },
+    {
+      "id": "drone-photography",
+      "title": "Aerial Photography",
+      "description": "Breathtaking aerial shots for weddings and large events using professional drone equipment.",
+      "startingPrice": "₹20,000"
+    },
+    {
+      "id": "destination-wedding",
+      "title": "Destination Wedding",
+      "description": "Complete photography coverage for destination weddings across India and abroad.",
+      "startingPrice": "₹2,50,000"
+    }
+  ]
+}

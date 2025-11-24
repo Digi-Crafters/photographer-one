@@ -4,6 +4,7 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
 import { motion, AnimatePresence } from 'framer-motion';
+import Link from 'next/link';
 
 interface Testimonial {
   id: number;
@@ -278,12 +279,12 @@ const Testimonials: React.FC = () => {
           <p className="text-lg text-[#6B6153] font-light mb-6">
             Ready to create your own story?
           </p>
-          <a
-            href="/contact"
+          <Link
+            href="/#contact"
             className="inline-block px-10 py-4 bg-[#2C2C2C] text-[#F5F1EA] text-sm tracking-wider uppercase hover:bg-[#8B7355] transition-colors duration-300"
           >
             Let&apos;s Talk
-          </a>
+          </Link>
         </motion.div>
       </div>
     </section>

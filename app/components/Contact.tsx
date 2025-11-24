@@ -1,42 +1,42 @@
 // components/ContactSection.tsx
-'use client';
+"use client";
 
-import React, { useState } from 'react';
-import { easeOut, motion } from 'framer-motion';
+import React, { useState } from "react";
+import { easeOut, motion } from "framer-motion";
 
 const ContactSection: React.FC = () => {
-  const [activeForm, setActiveForm] = useState('consultation');
+  const [activeForm, setActiveForm] = useState("consultation");
   const [isSubmitted, setIsSubmitted] = useState(false);
 
   const consultationTypes = [
     {
-      id: 'wedding',
-      title: 'Wedding Consultation',
-      duration: '45 mins',
-      description: 'Plan your perfect wedding photography experience',
-      icon: '💒'
+      id: "wedding",
+      title: "Wedding Consultation",
+      duration: "45 mins",
+      description: "Plan your perfect wedding photography experience",
+      icon: "💒",
     },
     {
-      id: 'portrait',
-      title: 'Portrait Session',
-      duration: '30 mins',
-      description: 'Discuss your vision for personal or professional portraits',
-      icon: '👤'
+      id: "portrait",
+      title: "Portrait Session",
+      duration: "30 mins",
+      description: "Discuss your vision for personal or professional portraits",
+      icon: "👤",
     },
     {
-      id: 'commercial',
-      title: 'Commercial Project',
-      duration: '60 mins',
-      description: 'Explore photography solutions for your business',
-      icon: '🏢'
+      id: "commercial",
+      title: "Commercial Project",
+      duration: "60 mins",
+      description: "Explore photography solutions for your business",
+      icon: "🏢",
     },
     {
-      id: 'general',
-      title: 'General Inquiry',
-      duration: '20 mins',
-      description: 'Quick chat about your photography needs',
-      icon: '💬'
-    }
+      id: "general",
+      title: "General Inquiry",
+      duration: "20 mins",
+      description: "Quick chat about your photography needs",
+      icon: "💬",
+    },
   ];
 
   const containerVariants = {
@@ -44,9 +44,9 @@ const ContactSection: React.FC = () => {
     visible: {
       opacity: 1,
       transition: {
-        staggerChildren: 0.1
-      }
-    }
+        staggerChildren: 0.1,
+      },
+    },
   };
 
   const itemVariants = {
@@ -56,9 +56,9 @@ const ContactSection: React.FC = () => {
       y: 0,
       transition: {
         duration: 0.8,
-        ease: easeOut
-      }
-    }
+        ease: easeOut,
+      },
+    },
   };
 
   const formVariants = {
@@ -68,9 +68,9 @@ const ContactSection: React.FC = () => {
       x: 0,
       transition: {
         duration: 0.6,
-        ease: easeOut
-      }
-    }
+        ease: easeOut,
+      },
+    },
   };
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -99,8 +99,8 @@ const ContactSection: React.FC = () => {
               Thank You
             </h2>
             <p className="text-lg text-[#6B6153] mb-8 font-light leading-relaxed">
-              We&apos;ve received your consultation request and will contact you within 24 hours 
-              to schedule your session and discuss your vision.
+              We&apos;ve received your consultation request and will contact you
+              within 24 hours to schedule your session and discuss your vision.
             </p>
             <button
               onClick={() => setIsSubmitted(false)}
@@ -117,10 +117,13 @@ const ContactSection: React.FC = () => {
   return (
     <div className="relative bg-[#F5F1EA] py-32 overflow-hidden" id="contact">
       {/* Background Elements */}
-      <div className="absolute inset-0 opacity-[0.02]" style={{
-        backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' /%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' /%3E%3C/svg%3E")`,
-      }} />
-      
+      <div
+        className="absolute inset-0 opacity-[0.02]"
+        style={{
+          backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' /%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' /%3E%3C/svg%3E")`,
+        }}
+      />
+
       {/* Decorative Elements */}
       <div className="absolute top-20 right-10 w-px h-32 bg-[#D4C4B0]/30"></div>
       <div className="absolute bottom-20 left-10 w-2 h-2 bg-[#8B7355] rounded-full"></div>
@@ -144,11 +147,14 @@ const ContactSection: React.FC = () => {
           </div>
           <h2 className="text-5xl md:text-6xl font-light text-[#2C2C2C] mb-6">
             Get Your Free
-            <span className="block font-serif italic text-[#8B7355] mt-2">Consultation</span>
+            <span className="block font-serif italic text-[#8B7355] mt-2">
+              Consultation
+            </span>
           </h2>
           <p className="text-lg text-[#6B6153] max-w-2xl mx-auto font-light leading-relaxed">
-            Begin your photography journey with a complimentary consultation. 
-            Let&apos;s discuss your vision and create something extraordinary together.
+            Begin your photography journey with a complimentary consultation.
+            Let&apos;s discuss your vision and create something extraordinary
+            together.
           </p>
         </motion.div>
 
@@ -162,8 +168,10 @@ const ContactSection: React.FC = () => {
             className="lg:col-span-5 space-y-6"
           >
             <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 border border-[#D4C4B0]/30">
-              <h3 className="text-2xl font-light text-[#2C2C2C] mb-6">Choose Your Session</h3>
-              
+              <h3 className="text-2xl font-light text-[#2C2C2C] mb-6">
+                Choose Your Session
+              </h3>
+
               <div className="space-y-4">
                 {consultationTypes.map((type) => (
                   <motion.button
@@ -171,9 +179,9 @@ const ContactSection: React.FC = () => {
                     variants={itemVariants}
                     onClick={() => setActiveForm(type.id)}
                     className={`w-full text-left p-6 rounded-xl transition-all duration-500 group border ${
-                      activeForm === type.id 
-                        ? 'border-[#8B7355] bg-[#8B7355]/5' 
-                        : 'border-[#D4C4B0]/30 hover:border-[#D4C4B0]/50'
+                      activeForm === type.id
+                        ? "border-[#8B7355] bg-[#8B7355]/5"
+                        : "border-[#D4C4B0]/30 hover:border-[#D4C4B0]/50"
                     }`}
                   >
                     <div className="flex items-start gap-4">
@@ -185,9 +193,13 @@ const ContactSection: React.FC = () => {
                       </motion.span>
                       <div className="flex-1">
                         <div className="flex items-center gap-3 mb-2">
-                          <h4 className={`text-lg font-light transition-colors duration-300 ${
-                            activeForm === type.id ? 'text-[#8B7355]' : 'text-[#2C2C2C]'
-                          }`}>
+                          <h4
+                            className={`text-lg font-light transition-colors duration-300 ${
+                              activeForm === type.id
+                                ? "text-[#8B7355]"
+                                : "text-[#2C2C2C]"
+                            }`}
+                          >
                             {type.title}
                           </h4>
                           <span className="text-sm text-[#9C8B7A] font-light bg-[#F5F1EA] px-2 py-1 rounded">
@@ -213,10 +225,10 @@ const ContactSection: React.FC = () => {
                 </h4>
                 <div className="grid gap-2">
                   {[
-                    'Personalized photography plan',
-                    'Pricing & package discussion',
-                    'Creative direction session',
-                    'No obligation commitment'
+                    "Personalized photography plan",
+                    "Pricing & package discussion",
+                    "Creative direction session",
+                    "No obligation commitment",
                   ].map((benefit, index) => (
                     <motion.div
                       key={benefit}
@@ -241,9 +253,13 @@ const ContactSection: React.FC = () => {
               <h3 className="text-xl font-light mb-6">Direct Contact</h3>
               <div className="space-y-4">
                 {[
-                  { icon: '📧', label: 'Email', value: 'hello@atelier.com' },
-                  { icon: '📞', label: 'Phone', value: '+1 (555) 123-4567' },
-                  { icon: '📍', label: 'Studio', value: '123 Visual Arts District' }
+                  { icon: "📧", label: "Email", value: "hello@atelier.com" },
+                  { icon: "📞", label: "Phone", value: "+1 (555) 123-4567" },
+                  {
+                    icon: "📍",
+                    label: "Studio",
+                    value: "123 Visual Arts District",
+                  },
                 ].map((contact, index) => (
                   <motion.div
                     key={contact.label}
@@ -256,7 +272,9 @@ const ContactSection: React.FC = () => {
                       {contact.icon}
                     </span>
                     <div>
-                      <div className="text-sm opacity-80 font-light">{contact.label}</div>
+                      <div className="text-sm opacity-80 font-light">
+                        {contact.label}
+                      </div>
                       <div className="font-light">{contact.value}</div>
                     </div>
                   </motion.div>
@@ -359,8 +377,12 @@ const ContactSection: React.FC = () => {
                     id="newsletter"
                     className="w-4 h-4 text-[#8B7355] bg-transparent border-[#D4C4B0] rounded focus:ring-[#8B7355] focus:ring-1"
                   />
-                  <label htmlFor="newsletter" className="text-sm text-[#6B6153] font-light">
-                    Subscribe to our newsletter for photography tips and exclusive offers
+                  <label
+                    htmlFor="newsletter"
+                    className="text-sm text-[#6B6153] font-light"
+                  >
+                    Subscribe to our newsletter for photography tips and
+                    exclusive offers
                   </label>
                 </div>
 
@@ -370,12 +392,15 @@ const ContactSection: React.FC = () => {
                   type="submit"
                   className="w-full py-4 bg-[#2C2C2C] text-[#F5F1EA] text-sm tracking-wider uppercase rounded-lg font-light hover:bg-[#8B7355] transition-all duration-500 group relative overflow-hidden"
                 >
-                  <span className="relative z-10">Request Free Consultation</span>
+                  <span className="relative z-10">
+                    Request Free Consultation
+                  </span>
                   <div className="absolute inset-0 bg-gradient-to-r from-[#8B7355] to-[#9C8B7A] transform origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-500" />
                 </motion.button>
 
                 <p className="text-center text-xs text-[#9C8B7A] font-light">
-                  We&apos;ll contact you within 24 hours to confirm your consultation time
+                  We&apos;ll contact you within 24 hours to confirm your
+                  consultation time
                 </p>
               </form>
             </div>
@@ -402,9 +427,6 @@ const ContactSection: React.FC = () => {
             <div className="flex gap-4">
               <button className="px-6 py-3 border border-[#D4C4B0] text-[#2C2C2C] text-sm tracking-wider uppercase hover:bg-[#D4C4B0] transition-colors duration-300 font-light">
                 Download Brochure
-              </button>
-              <button className="px-6 py-3 bg-[#8B7355] text-[#F5F1EA] text-sm tracking-wider uppercase hover:bg-[#9C8B7A] transition-colors duration-300 font-light">
-                View Pricing
               </button>
             </div>
           </div>

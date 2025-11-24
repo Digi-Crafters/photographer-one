@@ -290,7 +290,7 @@ const ServicesSection: React.FC = () => {
                   {/* Action Buttons */}
                   <div className="flex gap-4 pt-4">
                     <Link 
-                      href="/contact" 
+                      href="/booking" 
                       className="group relative px-6 py-3 bg-[#2C2C2C] text-[#F5F1EA] text-sm tracking-wider uppercase overflow-hidden rounded-lg"
                     >
                       <span className="relative z-10">Book Session</span>

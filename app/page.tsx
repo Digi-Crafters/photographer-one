@@ -3,7 +3,6 @@ import Hero from "./components/Hero";
 import FeaturedWork from "./components/FeaturedWork";
 import Services from "./components/Services";
 import Testimonials from "./components/Testimonials";
-import Footer from "./components/Footer";
 import Contact from "./components/Contact";
 import OurTeam from "./components/OurTeam";
 
@@ -16,7 +15,7 @@ const page = () => {
       <Testimonials/>
       <OurTeam/>
       <Contact/>
-      <Footer/>
+     
     </div>
   );
 };

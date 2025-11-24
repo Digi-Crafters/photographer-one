@@ -4,6 +4,7 @@
 import React from 'react';
 import Image from 'next/image';
 import { easeOut, motion } from 'framer-motion';
+import Link from 'next/link';
 
 const FeaturedWork: React.FC = () => {
   const featuredProjects = [
@@ -224,7 +225,7 @@ const FeaturedWork: React.FC = () => {
                   {/* View Project Link */}
                   <div className="pt-4">
                     <button className="group/link flex items-center gap-3 text-[#8B7355] hover:text-[#2C2C2C] transition-all duration-300">
-                      <span className="text-sm tracking-[0.2em] uppercase font-light">Explore</span>
+                      
                       <div className="relative overflow-hidden">
                         <div className="w-6 h-px bg-[#8B7355] group-hover/link:bg-[#2C2C2C] transition-colors duration-300" />
                         <div className="absolute inset-0 w-0 h-px bg-[#2C2C2C] group-hover/link:w-6 transition-all duration-300 delay-100" />
@@ -249,12 +250,12 @@ const FeaturedWork: React.FC = () => {
           className="text-center mt-20"
         >
           <div className="relative inline-flex">
-            <button className="group relative px-12 py-4 border border-[#D4C4B0] text-[#2C2C2C] text-sm tracking-wider uppercase overflow-hidden font-light">
+            <Link href="/portfolio" className="group relative px-12 py-4 border border-[#D4C4B0] text-[#2C2C2C] text-sm tracking-wider uppercase overflow-hidden font-light">
               <span className="relative z-10 transition-colors duration-300 group-hover:text-[#F5F1EA]">
                 Explore Full Portfolio
               </span>
               <div className="absolute inset-0 bg-gradient-to-r from-[#8B7355] to-[#9C8B7A] transform origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-500 ease-out" />
-            </button>
+            </Link>
             
             {/* Decorative corners */}
             <div className="absolute -top-1 -left-1 w-3 h-3 border-t border-l border-[#8B7355] opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-200" />
