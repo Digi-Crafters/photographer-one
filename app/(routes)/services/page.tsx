@@ -22,9 +22,51 @@ const ServicesPage = () => {
     { id: 'corporate', label: 'Corporate' }
   ];
 
+  // Updated image mapping for better relevance
+  const serviceImages = {
+    wedding: [
+      "https://images.unsplash.com/photo-1519741497674-611481863552?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80",
+      "https://images.unsplash.com/photo-1529519195486-16945f0fb37f?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0",
+      "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1374&q=80",
+      "https://images.unsplash.com/photo-1554151228-14d9def656e4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80"
+    ],
+    prewedding: [
+      "https://images.unsplash.com/photo-1532712938310-34cb3982ef74?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+      "https://images.unsplash.com/photo-1519225421980-715cb0215aed?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+      "https://images.unsplash.com/photo-1550005238-46c657fa5d40?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80"
+    ],
+    portrait: [
+      "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80",
+      "https://images.unsplash.com/photo-1554151228-14d9def656e4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+      "https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1364&q=80"
+    ],
+    family: [
+      "https://images.unsplash.com/photo-1519741497674-611481863552?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80",
+      "https://images.unsplash.com/photo-1511988617509-a57c8a288659?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80",
+      "https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+    ],
+    engagement: [
+      "https://images.unsplash.com/photo-1519225421980-715cb0215aed?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80",
+      "https://images.unsplash.com/photo-1532712938310-34cb3982ef74?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80",
+      "https://images.unsplash.com/photo-1556082598-96a4de8b8882?q=80&w=1464&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=1476&auto=format&fit=crop"
+    ],
+    corporate: [
+      "https://images.unsplash.com/photo-1588979355313-6711a095465f?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZmFtaWx5JTIwcGhvdG98ZW58MHx8MHx8fDA%3D",
+      "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+      "https://images.unsplash.com/photo-1565688534245-05d6b5be184a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80"
+    ]
+  };
+
+  // Enhance services data with better images
+  const enhancedServices = data.services.map(service => ({
+    ...service,
+    images: serviceImages[service.id as keyof typeof serviceImages] || service.images
+  }));
+
   const filteredServices = filter === 'all' 
-    ? data.services 
-    : data.services.filter(service => service.id === filter);
+    ? enhancedServices 
+    : enhancedServices.filter(service => service.id === filter);
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -55,26 +97,30 @@ const ServicesPage = () => {
   return (
     <div className="min-h-screen bg-[#F5F1EA]">
       {/* Header Section */}
-      <section className="relative py-20 overflow-hidden">
+      <section className="relative py-24 overflow-hidden">
         <div className="absolute inset-0 opacity-[0.02]" style={{
           backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' /%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' /%3E%3C/svg%3E")`,
         }} />
+        
+        {/* Decorative Elements */}
+        <div className="absolute top-20 left-10 w-px h-32 bg-gradient-to-b from-transparent via-[#D4C4B0] to-transparent"></div>
+        <div className="absolute bottom-20 right-10 w-3 h-3 bg-[#8B7355] rounded-full"></div>
         
         <div className="container mx-auto px-6 relative z-10">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
-            className="text-center"
+            className="text-center max-w-4xl mx-auto"
           >
-            <div className="text-sm tracking-[0.4em] text-[#9C8B7A] mb-4 uppercase">
-              Our Offerings
+            <div className="text-sm tracking-[0.4em] text-[#9C8B7A] mb-4 uppercase font-light">
+              Our Expertise
             </div>
             <h1 className="text-5xl md:text-7xl font-light text-[#2C2C2C] mb-6">
               Photography
               <span className="block font-serif italic text-[#8B7355] mt-2">Services</span>
             </h1>
-            <p className="text-lg text-[#6B6153] max-w-2xl mx-auto font-light leading-relaxed">
+            <p className="text-lg text-[#6B6153] font-light leading-relaxed">
               Comprehensive photography solutions tailored to capture every special moment 
               of your life&apos;s journey with artistic excellence and emotional depth.
             </p>
@@ -90,16 +136,16 @@ const ServicesPage = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="flex overflow-x-auto gap-2 pb-8 mb-12 scrollbar-hide snap-x"
+            className="flex flex-wrap justify-center gap-3 pb-12 mb-8"
           >
             {categories.map((category) => (
               <button
                 key={category.id}
                 onClick={() => setFilter(category.id)}
-                className={`flex-shrink-0 px-6 py-3 rounded-full text-sm tracking-wider uppercase transition-all duration-300 snap-center ${
+                className={`px-6 py-3 rounded-full text-sm tracking-wider uppercase transition-all duration-300 border ${
                   filter === category.id
-                    ? 'bg-[#8B7355] text-[#F5F1EA]'
-                    : 'bg-white/80 text-[#6B6153] hover:bg-white hover:text-[#2C2C2C]'
+                    ? 'bg-[#8B7355] text-[#F5F1EA] border-[#8B7355] shadow-lg'
+                    : 'bg-white/80 text-[#6B6153] border-[#D4C4B0] hover:bg-white hover:border-[#8B7355] hover:text-[#2C2C2C]'
                 }`}
               >
                 {category.label}
@@ -125,7 +171,7 @@ const ServicesPage = () => {
                   setTimeout(scrollToDetails, 100);
                 }}
               >
-                <div className="bg-white/80 backdrop-blur-sm rounded-2xl overflow-hidden border border-[#D4C4B0]/30 hover:border-[#8B7355]/30 transition-all duration-500 hover:shadow-2xl hover:shadow-[#8B7355]/5">
+                <div className="bg-white/90 backdrop-blur-sm rounded-2xl overflow-hidden border border-[#D4C4B0]/30 hover:border-[#8B7355]/40 transition-all duration-500 hover:shadow-xl hover:shadow-[#8B7355]/10 h-full flex flex-col">
                   {/* Image */}
                   <div className="relative h-64 overflow-hidden">
                     <Image
@@ -135,55 +181,55 @@ const ServicesPage = () => {
                       className="object-cover transition-transform duration-700 group-hover:scale-110"
                       sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-[#2C2C2C]/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-[#2C2C2C]/40 to-transparent" />
                     
                     {/* Category Badge */}
                     <div className="absolute top-4 left-4">
-                      <span className="bg-[#F5F1EA]/95 backdrop-blur-sm px-3 py-1 text-xs text-[#2C2C2C] tracking-[0.2em] uppercase">
+                      <span className="bg-[#F5F1EA]/95 backdrop-blur-sm px-3 py-1.5 text-xs text-[#2C2C2C] tracking-[0.2em] uppercase rounded-full font-medium">
                         {service.category}
                       </span>
                     </div>
 
                     {/* Hover Overlay */}
-                    <div className="absolute inset-0 bg-[#8B7355] opacity-0 group-hover:opacity-10 transition-opacity duration-500" />
+                    <div className="absolute inset-0 bg-[#8B7355] opacity-0 group-hover:opacity-5 transition-opacity duration-500" />
                   </div>
 
                   {/* Content */}
-                  <div className="p-6">
-                    <h3 className="text-xl font-light text-[#2C2C2C] mb-3 group-hover:text-[#8B7355] transition-colors duration-300">
+                  <div className="p-6 flex-1 flex flex-col">
+                    <h3 className="text-xl font-normal text-[#2C2C2C] mb-3 group-hover:text-[#8B7355] transition-colors duration-300 leading-tight">
                       {service.title}
                     </h3>
-                    <p className="text-[#6B6153] font-light text-sm leading-relaxed mb-4 line-clamp-2">
+                    <p className="text-[#6B6153] font-light text-sm leading-relaxed mb-4 flex-1">
                       {service.description}
                     </p>
 
                     {/* Stats */}
-                    <div className="flex justify-between items-center pt-4 border-t border-[#D4C4B0]/20">
+                    <div className="grid grid-cols-3 gap-4 pt-4 border-t border-[#D4C4B0]/30">
                       <div className="text-center">
                         <div className="text-lg font-light text-[#2C2C2C]">{service.stats.eventsCaptured}</div>
-                        <div className="text-xs tracking-[0.15em] text-[#9C8B7A] uppercase">Captured</div>
+                        <div className="text-xs tracking-[0.15em] text-[#9C8B7A] uppercase mt-1">Events</div>
                       </div>
                       <div className="text-center">
                         <div className="text-lg font-light text-[#2C2C2C]">{service.stats.experience}</div>
-                        <div className="text-xs tracking-[0.15em] text-[#9C8B7A] uppercase">Experience</div>
+                        <div className="text-xs tracking-[0.15em] text-[#9C8B7A] uppercase mt-1">Experience</div>
                       </div>
                       <div className="text-center">
                         <div className="text-lg font-light text-[#2C2C2C]">{service.stats.clientSatisfaction}</div>
-                        <div className="text-xs tracking-[0.15em] text-[#9C8B7A] uppercase">Satisfaction</div>
+                        <div className="text-xs tracking-[0.15em] text-[#9C8B7A] uppercase mt-1">Satisfaction</div>
                       </div>
                     </div>
 
                     {/* CTA */}
-                    <div className="pt-4">
-                      <button className="group/link flex items-center gap-2 text-[#8B7355] hover:text-[#2C2C2C] transition-all duration-300 w-full justify-center">
+                    <div className="pt-4 mt-auto">
+                      <button className="group/link flex items-center gap-2 text-[#8B7355] hover:text-[#2C2C2C] transition-all duration-300 w-full justify-center py-2">
                         <span className="text-sm tracking-[0.2em] uppercase font-light">View Details</span>
-                        <motion.div
+                        <motion.span
                           animate={{ x: [0, 4, 0] }}
                           transition={{ duration: 2, repeat: Infinity }}
                           className="text-lg"
                         >
                           →
-                        </motion.div>
+                        </motion.span>
                       </button>
                     </div>
                   </div>
@@ -210,13 +256,14 @@ const ServicesPage = () => {
                 {/* Image Gallery */}
                 <div className="space-y-4">
                   {/* Main Image */}
-                  <div className="relative h-96 rounded-2xl overflow-hidden">
+                  <div className="relative h-96 rounded-2xl overflow-hidden group">
                     <Image
                       src={selectedService.images[activeImageIndex]}
                       alt={selectedService.title}
                       fill
-                      className="object-cover"
+                      className="object-cover transition-transform duration-700 group-hover:scale-105"
                       sizes="(max-width: 1024px) 100vw, 50vw"
+                      priority
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-[#2C2C2C]/20 to-transparent" />
                     
@@ -225,7 +272,7 @@ const ServicesPage = () => {
                       {selectedService.popularFor.map((tag) => (
                         <span
                           key={tag}
-                          className="bg-[#F5F1EA]/95 backdrop-blur-sm px-3 py-1 text-xs text-[#2C2C2C] tracking-[0.1em] uppercase rounded-full"
+                          className="bg-[#F5F1EA]/95 backdrop-blur-sm px-3 py-1.5 text-xs text-[#2C2C2C] tracking-[0.1em] uppercase rounded-full font-medium"
                         >
                           {tag}
                         </span>
@@ -239,8 +286,10 @@ const ServicesPage = () => {
                       <button
                         key={index}
                         onClick={() => setActiveImageIndex(index)}
-                        className={`relative h-20 rounded-lg overflow-hidden transition-all duration-300 ${
-                          activeImageIndex === index ? 'ring-2 ring-[#8B7355]' : 'opacity-70 hover:opacity-100'
+                        className={`relative h-20 rounded-lg overflow-hidden transition-all duration-300 border-2 ${
+                          activeImageIndex === index 
+                            ? 'border-[#8B7355] scale-105' 
+                            : 'border-transparent opacity-70 hover:opacity-100 hover:border-[#D4C4B0]'
                         }`}
                       >
                         <Image
@@ -258,49 +307,49 @@ const ServicesPage = () => {
                 {/* Service Details */}
                 <div className="space-y-8">
                   <div>
-                    <div className="flex items-center gap-4 mb-4">
-                      <div className="w-2 h-8 bg-[#8B7355] rounded-full"></div>
+                    <div className="flex items-center gap-4 mb-6">
+                      <div className="w-2 h-10 bg-[#8B7355] rounded-full"></div>
                       <div>
-                        <div className="text-sm tracking-[0.3em] text-[#9C8B7A] uppercase">
+                        <div className="text-sm tracking-[0.3em] text-[#9C8B7A] uppercase font-light">
                           {selectedService.category}
                         </div>
-                        <h2 className="text-3xl lg:text-4xl font-light text-[#2C2C2C]">
+                        <h2 className="text-3xl lg:text-4xl font-light text-[#2C2C2C] leading-tight">
                           {selectedService.title}
                         </h2>
                       </div>
                     </div>
                     
-                    <p className="text-lg text-[#6B6153] font-light leading-relaxed mb-6">
+                    <p className="text-lg text-[#6B6153] font-light leading-relaxed mb-8">
                       {selectedService.detailedDescription}
                     </p>
 
                     {/* Service Meta */}
                     <div className="grid grid-cols-2 gap-6 mb-8">
-                      <div className="text-center p-4 bg-[#F5F1EA] rounded-xl">
+                      <div className="text-center p-6 bg-[#F5F1EA] rounded-xl border border-[#D4C4B0]/30">
                         <div className="text-2xl font-light text-[#2C2C2C]">{selectedService.duration}</div>
-                        <div className="text-sm tracking-[0.2em] text-[#9C8B7A] uppercase mt-1">Duration</div>
+                        <div className="text-sm tracking-[0.2em] text-[#9C8B7A] uppercase mt-2 font-light">Duration</div>
                       </div>
-                      <div className="text-center p-4 bg-[#F5F1EA] rounded-xl">
+                      <div className="text-center p-6 bg-[#F5F1EA] rounded-xl border border-[#D4C4B0]/30">
                         <div className="text-2xl font-light text-[#2C2C2C]">{selectedService.deliveryTime}</div>
-                        <div className="text-sm tracking-[0.2em] text-[#9C8B7A] uppercase mt-1">Delivery</div>
+                        <div className="text-sm tracking-[0.2em] text-[#9C8B7A] uppercase mt-2 font-light">Delivery</div>
                       </div>
                     </div>
                   </div>
 
                   {/* Features */}
                   <div>
-                    <h3 className="text-lg font-light text-[#2C2C2C] mb-4">What&apos;s Included</h3>
-                    <div className="grid gap-3">
+                    <h3 className="text-xl font-light text-[#2C2C2C] mb-6">What&apos;s Included</h3>
+                    <div className="grid gap-4">
                       {selectedService.features.map((feature, index) => (
                         <motion.div
                           key={feature}
                           initial={{ opacity: 0, x: -20 }}
                           animate={{ opacity: 1, x: 0 }}
                           transition={{ delay: index * 0.1 }}
-                          className="flex items-center gap-3 text-[#2C2C2C] font-light"
+                          className="flex items-center gap-4 p-3 bg-white/50 rounded-lg border border-[#D4C4B0]/30"
                         >
-                          <div className="w-1.5 h-1.5 bg-[#8B7355] rounded-full flex-shrink-0" />
-                          {feature}
+                          <div className="w-2 h-2 bg-[#8B7355] rounded-full flex-shrink-0" />
+                          <span className="text-[#2C2C2C] font-light">{feature}</span>
                         </motion.div>
                       ))}
                     </div>
@@ -308,7 +357,7 @@ const ServicesPage = () => {
 
                   {/* Packages */}
                   <div>
-                    <h3 className="text-lg font-light text-[#2C2C2C] mb-6">Packages & Pricing</h3>
+                    <h3 className="text-xl font-light text-[#2C2C2C] mb-6">Packages & Pricing</h3>
                     <div className="space-y-4">
                       {selectedService.packages.map((pkg, index) => (
                         <motion.div
@@ -322,10 +371,10 @@ const ServicesPage = () => {
                             <h4 className="text-xl font-light text-[#2C2C2C]">{pkg.name}</h4>
                             <div className="text-2xl font-light text-[#8B7355]">{pkg.price}</div>
                           </div>
-                          <div className="space-y-2">
+                          <div className="space-y-3">
                             {pkg.features.map((feature) => (
                               <div key={feature} className="flex items-center gap-3 text-[#6B6153] text-sm font-light">
-                                <div className="w-1 h-1 bg-[#9C8B7A] rounded-full flex-shrink-0" />
+                                <div className="w-1.5 h-1.5 bg-[#9C8B7A] rounded-full flex-shrink-0" />
                                 {feature}
                               </div>
                             ))}
@@ -367,16 +416,19 @@ const ServicesPage = () => {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <h2 className="text-4xl font-light text-[#2C2C2C] mb-4">
+            <div className="text-sm tracking-[0.4em] text-[#9C8B7A] mb-4 uppercase font-light">
+              Premium Add-ons
+            </div>
+            <h2 className="text-4xl md:text-5xl font-light text-[#2C2C2C] mb-6">
               Additional
-              <span className="block font-serif italic text-[#8B7355]">Services</span>
+              <span className="block font-serif italic text-[#8B7355] mt-2">Services</span>
             </h2>
             <p className="text-lg text-[#6B6153] max-w-2xl mx-auto font-light">
               Enhance your photography experience with our premium add-on services
             </p>
           </motion.div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-4xl mx-auto">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
             {data.additionalServices.map((service, index) => (
               <motion.div
                 key={service.id}
@@ -384,13 +436,18 @@ const ServicesPage = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
                 viewport={{ once: true }}
-                className="text-center p-6 bg-white/80 backdrop-blur-sm rounded-2xl border border-[#D4C4B0]/30 hover:border-[#8B7355]/30 transition-all duration-300"
+                className="group text-center p-8 bg-white/90 backdrop-blur-sm rounded-2xl border border-[#D4C4B0]/30 hover:border-[#8B7355]/40 transition-all duration-500 hover:shadow-xl hover:shadow-[#8B7355]/5"
               >
-                <h3 className="text-lg font-light text-[#2C2C2C] mb-3">{service.title}</h3>
+                <div className="w-12 h-12 bg-gradient-to-br from-[#8B7355] to-[#9C8B7A] rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-500">
+                  <span className="text-white text-lg">+</span>
+                </div>
+                <h3 className="text-lg font-normal text-[#2C2C2C] mb-3 group-hover:text-[#8B7355] transition-colors duration-300">
+                  {service.title}
+                </h3>
                 <p className="text-[#6B6153] text-sm font-light mb-4 leading-relaxed">
                   {service.description}
                 </p>
-                <div className="text-[#8B7355] font-light">{service.startingPrice}</div>
+                <div className="text-[#8B7355] font-light text-lg">{service.startingPrice}</div>
               </motion.div>
             ))}
           </div>

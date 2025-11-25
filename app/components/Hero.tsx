@@ -15,12 +15,11 @@ const Hero: React.FC = () => {
   const y = useTransform(scrollYProgress, [0, 1], ["0%", "50%"]);
   const opacity = useTransform(scrollYProgress, [0, 0.5], [1, 0]);
 
-  const primaryImage =
-    "https://oakstreetevents.com/wp-content/uploads/2024/10/Picture1.jpg";
-  const secondaryImage =
-    "https://oakstreetevents.com/wp-content/uploads/2024/10/Picture1.jpg";
-  const tertiaryImage =
-    "https://images.unsplash.com/photo-1511285560929-80b456fea0bc?q=80&w=1469&auto=format&fit=crop";
+  // Updated images that match the website content and photography theme
+  // For more diverse service representation:
+const primaryImage = "https://images.unsplash.com/photo-1607190074257-dd4b7af0309f?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjN8fHdlZGRpbmd8ZW58MHx8MHx8fDA%3D"; // Wedding
+const secondaryImage = "https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8cG9ydHJhaXR8ZW58MHx8MHx8fDA%3D"; // Corporate
+const tertiaryImage = "https://images.unsplash.com/photo-1646284411451-80fb800ce43d?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGNvcnBvcmF0ZSUyMHBob3RvZ3JhcGh5fGVufDB8fDB8fHww"; // Portrait
 
   return (
     <div
@@ -43,7 +42,10 @@ const Hero: React.FC = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.2 }}
             className="flex justify-between items-center"
-          ></motion.div>
+          >
+            {/* Logo placeholder - you can add your actual logo here */}
+            <div className="text-xl font-light text-[#2C2C2C]">Atelier</div>
+          </motion.div>
         </div>
 
         {/* Main Content */}
@@ -81,13 +83,13 @@ const Hero: React.FC = () => {
                 transition={{ duration: 1, delay: 0.8 }}
                 className="flex gap-4 pt-4"
               >
-                <a
+                <Link
                   href="/portfolio"
                   className="group relative px-8 py-4 bg-[#2C2C2C] text-[#F5F1EA] text-sm tracking-wider uppercase overflow-hidden"
                 >
                   <span className="relative z-10">View Portfolio</span>
                   <div className="absolute inset-0 bg-[#8B7355] transform origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-500" />
-                </a>
+                </Link>
 
                 <Link
                   href="/#contact"
@@ -100,7 +102,7 @@ const Hero: React.FC = () => {
 
             {/* Right Images - Bento Grid Style */}
             <div className="lg:col-span-7 relative h-[700px] hidden lg:block">
-              {/* Large Main Image */}
+              {/* Large Main Image - Elegant Wedding */}
               <motion.div
                 initial={{ opacity: 0, scale: 0.95 }}
                 animate={{ opacity: 1, scale: 1 }}
@@ -110,17 +112,15 @@ const Hero: React.FC = () => {
               >
                 <Image
                   src={primaryImage}
-                  alt="Featured photography work"
+                  alt="Elegant wedding photography by Atelier"
                   fill
                   className="object-cover"
                   priority
                 />
                 <div className="absolute inset-0 bg-[#2C2C2C]/5" />
-
-
               </motion.div>
 
-              {/* Small Top Left Image */}
+              {/* Small Top Left Image - Creative Portrait */}
               <motion.div
                 initial={{ opacity: 0, x: -30 }}
                 animate={{ opacity: 1, x: 0 }}
@@ -129,14 +129,14 @@ const Hero: React.FC = () => {
               >
                 <Image
                   src={secondaryImage}
-                  alt="Photography detail"
+                  alt="Creative portrait photography session"
                   fill
                   className="object-cover"
                 />
                 <div className="absolute inset-0 bg-[#8B7355]/10" />
               </motion.div>
 
-              {/* Bottom Left Image */}
+              {/* Bottom Left Image - Professional Portrait */}
               <motion.div
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -145,7 +145,7 @@ const Hero: React.FC = () => {
               >
                 <Image
                   src={tertiaryImage}
-                  alt="Behind the scenes"
+                  alt="Professional portrait photography"
                   fill
                   className="object-cover"
                 />
@@ -197,7 +197,7 @@ const Hero: React.FC = () => {
               </div>
               <div>
                 <div className="text-3xl font-light text-[#2C2C2C] mb-1">
-                  10+
+                  8+
                 </div>
                 <div className="text-xs tracking-[0.3em] text-[#9C8B7A] uppercase">
                   Years

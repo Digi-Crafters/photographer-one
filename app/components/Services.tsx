@@ -23,7 +23,7 @@ const ServicesSection: React.FC = () => {
       title: "Pre-Wedding Sessions",
       description: "Artistic storytelling that captures your love story before the big day. Intimate moments in breathtaking locations, creating heirlooms for generations.",
       features: ["Location Scouting", "Multiple Outfits", "Golden Hour Shoots", "Digital & Print"],
-      image: "https://images.unsplash.com/photo-1519225421980-715cb0215aed?q=80&w=1470&auto=format&fit=crop",
+      image: "https://images.unsplash.com/photo-1550005238-46c657fa5d40?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHByZS13ZWRkaW5nJTIwcGhvdG9zaG9vdHxlbnwwfHwwfHx8MA%3D%3D",
       stats: { delivered: "280+", experience: "6 Years", satisfaction: "98%" }
     },
     portrait: {
@@ -37,14 +37,14 @@ const ServicesSection: React.FC = () => {
       title: "Family Stories",
       description: "Capture the beautiful chaos and quiet moments of family life. Authentic sessions that tell your family's unique story through generations.",
       features: ["In-Home Sessions", "Multiple Generations", "Lifestyle Approach", "Custom Albums"],
-      image: "https://images.unsplash.com/photo-1511988617509-a57c8a288659?q=80&w=1471&auto=format&fit=crop",
+      image: "https://plus.unsplash.com/premium_photo-1661475944092-9561bd954235?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjF8fGZhbWlseXxlbnwwfHwwfHx8MA%3D%3D",
       stats: { delivered: "380+", experience: "7 Years", satisfaction: "100%" }
     },
     corporate: {
       title: "Corporate Events",
       description: "Professional event coverage that captures your company's culture and achievements. From executive portraits to large-scale corporate gatherings.",
       features: ["Brand Alignment", "Fast Turnaround", "Team Portraits", "Digital Archive"],
-      image: "https://media.istockphoto.com/id/1486287149/photo/group-of-multiracial-asian-business-participants-casual-chat-after-successful-conference-event.webp?a=1&b=1&s=612x612&w=0&k=20&c=w6LTgtP8zZnJgg9g7jemKYcmAWjv4lxNlPyZ-PjVwkE=",
+      image: "https://plus.unsplash.com/premium_photo-1664474653221-8412b8dfca3e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Y29ycG9yYXRlJTIwZXZlbnRzfGVufDB8fDB8fHww",
       stats: { delivered: "190+", experience: "5 Years", satisfaction: "97%" }
     }
   };
@@ -56,6 +56,8 @@ const ServicesSection: React.FC = () => {
     { id: 'family', label: 'Family', icon: '👨‍👩‍👧‍👦' },
     { id: 'corporate', label: 'Corporate', icon: '🏢' }
   ];
+
+  // Make the small arrow inside the "Explore All Services" CTA navigate to /contact
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -338,4 +340,4 @@ const ServicesSection: React.FC = () => {
   );
 };
 
-export default ServicesSection;
+export default ServicesSection; 

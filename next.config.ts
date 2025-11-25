@@ -1,26 +1,33 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
   images: {
-    // Add the domain for your image source here (e.g., Unsplash, Pexels, etc.)
-    // For demonstration, let's assume we are using a placeholder service.
-    // **NOTE: You must replace this with the actual domain of your image source.**
     remotePatterns: [
       {
         protocol: 'https',
-        hostname: 'images.unsplash.com', // Example source
+        hostname: 'images.unsplash.com',
+        pathname: '/**',
       },
       {
         protocol: 'https',
-        hostname: 'oakstreetevents.com', // Added domain for the new image source
-      },{
+        hostname: 'plus.unsplash.com',
+        pathname: '/**',
+      },
+      {
         protocol: 'https',
-        hostname: 'www.redveds.com', // Added domain for the new image source
-      },{
+        hostname: 'oakstreetevents.com',
+        pathname: '/**',
+      },
+      {
         protocol: 'https',
-        hostname: 'media.istockphoto.com', // Added domain for the new image source
-      }
+        hostname: 'www.redveds.com',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'media.istockphoto.com',
+        pathname: '/**',
+      },
     ],
   },
 };
